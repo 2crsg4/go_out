@@ -5,20 +5,22 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Ruby version
+  * `ruby '2.7.3'`
+## Rails version
+  * see `Gemfile`
+## System dependencies
+  * MySQL 5.7
+## Configuration
+## Database creation
+```
+$ rails db:reset
+```
+## Database initialization
+```
+$ rails db:migrate
+```
+## Run rails server
+```
+$ rails s
+```
