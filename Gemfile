@@ -30,6 +30,7 @@ gem 'bootsnap', '>= 1.4.4', require: false
 
 gem 'materialize-sass', '~> 1.0.0'
 gem 'material_icons'
+gem 'sorcery'
 gem 'slim'
 gem 'html2slim'
 
