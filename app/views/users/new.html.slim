@@ -14,10 +14,10 @@ div.container
         div.row
           div.input-field.col.s6
             = f.label :password, class: 'active'
-            = f.text_field :password
+            = f.f.password_field :password
         div.row
           div.input-field.col.s6
             = f.label :password_confirmation, class: 'active'
-            = f.text_field :password_confirmation
+            = f.f.password_field :password_confirmation
         div.actions
           = f.submit '登録', class: 'btn waves-effect waves-light'
