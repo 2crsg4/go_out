@@ -1,0 +1,10 @@
+header
+  nav
+    .nav-wrapper
+      a.brand-logo.left[href="#"]
+        | Go Out
+      ul#nav-mobile.right.hide-on-med-and-down
+        li
+          = link_to '新規登録はこちら', new_user_url
+        li
+          = link_to 'ログイン', login_url, class: 'waves-effect waves-light btn-large'

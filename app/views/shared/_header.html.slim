@@ -1,0 +1,10 @@
+header
+  nav
+    .nav-wrapper
+      a.brand-logo.left[href="#"]
+        | Go Out
+      ul#nav-mobile.right.hide-on-med-and-down
+        li
+          = link_to 'マイページ', root_url
+        li
+          = link_to 'ログアウト', logout_url, method: 'delete'
