@@ -1,0 +1,15 @@
+div.container
+  div.row
+    div.col.s12
+      h1 ログイン
+      = form_with url: login_path, local: true do |f|
+        div.row
+          div.input-field.col.s6
+            = f.label :user_name, class: 'active'
+            = f.text_field :user_name
+        div.row
+          div.input-field.col.s6
+            = f.label :password, class: 'active'
+            = f.password_field :password
+        div.actions
+          = f.submit 'ログイン', class: 'btn waves-effect waves-light'

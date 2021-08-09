@@ -1,0 +1,23 @@
+div.container
+  div.row
+    div.col.s6
+      h1 新規登録
+      = form_with model: @user, local: true do |f|
+        div.row
+          div.input-field.col.s6
+            = f.label :user_name, class: 'active'
+            = f.text_field :user_name
+        div.row
+          div.input-field.col.s6
+            = f.label :nickname, class: 'active'
+            = f.text_field :nickname
+        div.row
+          div.input-field.col.s6
+            = f.label :password, class: 'active'
+            = f.f.password_field :password
+        div.row
+          div.input-field.col.s6
+            = f.label :password_confirmation, class: 'active'
+            = f.f.password_field :password_confirmation
+        div.actions
+          = f.submit '登録', class: 'btn waves-effect waves-light'
