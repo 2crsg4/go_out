@@ -9,7 +9,7 @@ class SessionsController < ApplicationController
     #user_name, password = params[:session].values_at(:user_name, :password)
     #@user = login(user_name, password)
     @user = login(params[:user_name], params[:password])
-    binding.irb
+
     if @user
       redirect_to(root_path, notice: 'ログインしました')
     else
@@ -19,7 +19,6 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-    binding.irb
     logout
     redirect_to(login_path, notice: 'ログアウトしました')
   end
